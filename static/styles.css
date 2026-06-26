@@ -666,3 +666,162 @@ h1, h2, h3, h4, .font-heading { font-family: var(--font-heading); text-transform
     top:15px;
 }
 }
+/* ==========================================
+   MOBILE OPTIMIZATION
+   ========================================== */
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar {
+        padding: 10px 0;
+        background: rgba(6,11,19,0.95);
+        backdrop-filter: blur(15px);
+    }
+
+    .nav-container {
+        padding: 0 15px;
+    }
+
+    .logo-wrapper {
+        gap: 8px;
+    }
+
+    .dsr-nav-logo {
+        height: 35px;
+    }
+
+    .logo-title {
+        font-size: 0.9rem;
+        line-height: 1.1;
+    }
+
+    .logo-subtitle {
+        display: none;
+    }
+
+    /* Hero section */
+    .hero-section {
+        min-height: auto;
+        height: auto;
+        padding-top: 110px;
+        padding-bottom: 50px;
+    }
+
+    .hero-content {
+        padding: 20px;
+        background: transparent;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+
+    .hero-content h2 {
+        font-size: 1rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    /* Vehicle image */
+    .floating-vehicle,
+    .v-img {
+        width: 100%;
+        max-width: 320px;
+        margin: auto;
+    }
+
+    /* Remove floating effect on mobile */
+    .float-slow,
+    .floating-vehicle {
+        animation: none;
+    }
+
+    /* Cards */
+    .vehicle-card {
+        padding: 20px;
+        gap: 20px;
+        margin-bottom: 30px;
+        border-radius: 15px;
+    }
+
+    .v-title {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .v-desc {
+        text-align: center;
+        font-size: 0.95rem;
+    }
+
+    /* Features */
+    .v-features {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .spec-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Buttons */
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        padding: 14px;
+        font-size: 0.8rem;
+    }
+
+    .hero-buttons {
+        width: 100%;
+        gap: 12px;
+    }
+
+    /* Sections */
+    .models-section,
+    .features-section,
+    .battery-section,
+    .about-section,
+    .contact-section {
+        padding: 60px 0;
+    }
+
+    /* Contact */
+    .contact-details,
+    .contact-form {
+        padding: 20px;
+    }
+
+    /* Stats */
+    .stat-card {
+        padding: 30px 20px;
+    }
+
+    .stat-value {
+        font-size: 2rem;
+    }
+
+    /* Hide scroll indicator */
+    .scroll-indicator {
+        display: none;
+    }
+
+    /* Reduce glow effects */
+    .floor-glow,
+    .bg-glow,
+    .mixed-glow {
+        opacity: 0.15;
+    }
+
+    /* WhatsApp */
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
