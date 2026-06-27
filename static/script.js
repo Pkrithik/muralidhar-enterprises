@@ -349,6 +349,11 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             button.classList.add('active');
+            esmartImage.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            
+            });
         });
 
     });
